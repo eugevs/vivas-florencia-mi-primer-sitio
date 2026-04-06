@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+header {
+  background: #1a1a2e;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a2e;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Formulario — (d) estilos generales */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.campo label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* (c) input:focus — borde azul y box-shadow */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #378ADD;
+  box-shadow: 0 0 0 3px rgba(55, 138, 221, 0.15);
+}
+
+/* (a) input:valid — borde verde y fondo claro */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: #639922;
+  background-color: #f4faea;
+}
+
+/* (b) input:invalid — borde rojo, solo si el usuario ya escribió */
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: #E24B4A;
+  background-color: #fff5f5;
+}
+
+/* Checkbox */
+.campo-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botón enviar */
+button[type="submit"] {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #378ADD;
+}
