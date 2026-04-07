@@ -1,37 +1,54 @@
-
-/* 3.a Reset básico */
+/* (a) Reset básico */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* 3.b Tipografía */
+/* (b) Tipografía (puedes usar una del sistema o Google Fonts) */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* 3.c Header con fondo oscuro y texto claro */
+/* (c) Colores para el header */
 header {
-    background-color: black;
-    color: white;
+    background-color: #333; /* fondo oscuro */
+    color: #fff;            /* texto claro */
     padding: 20px;
-}
-
-/* 3.d Selector de elemento */
-section {
-    padding: 20px;
-}
-
-/* 3.e Footer con fondo oscuro */
-footer {
-    background-color: black;
-    color: white;
-    padding: 10px;
     text-align: center;
 }
 
-/* 3.f Pseudoclase hover */
+/* (d) Estilizar selectores (Elemento, Clase) */
+nav ul {
+    list-style: none;
+    background: #444;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* (f) Pseudo-clase :hover en los enlaces */
 nav a:hover {
-    color: red;
+    background-color: #555;
+    color: #00d4ff;
+}
+
+/* (e) Footer con fondo oscuro */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #00d4ff;
 }
