@@ -112,7 +112,7 @@ textarea:invalid:not(:placeholder-shown) {
 
 /* Botón enviar */
 button[type="submit"] {
-  background-color: #1a1a2e;
+  background-color: #4a90d9;
   color: white;
   border: none;
   padding: 12px 24px;
